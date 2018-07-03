@@ -83,8 +83,11 @@
 		var button = document.querySelector(".btn button");
 		button.onclick = function(){
 			var text = document.getElementById("text");
+			var span = text.getElementsByTagName("span");
+			console.log(span);
 			if(text.className == "text"){
 				text.className = "text2";
+				span[0].style.color = "#2f5eb5";
 			}else{
 				text.className = "text";
 			}
